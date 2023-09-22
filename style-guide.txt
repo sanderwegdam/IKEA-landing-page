@@ -1,0 +1,29 @@
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 475px
+- Desktop: 1440px
+
+## Colors
+
+- #000000
+- #f2f2f2
+- #cccccc
+- #dfdfdf
+- #484848
+- #0058a3
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Font
+
+- Family: [Roboto] (https://fonts.google.com/specimen/Roboto)
+- Weights: 400, 500, 900
+
