@@ -300,12 +300,12 @@ button:hover {
      }
      
      .search-wrap {
-         grid-area: search-wrap; 
+         grid-area: search-wrap;
      }
      
-     .search img{
+     .search img {
          padding-left: 0;
-         width: 40px;
+         width: 30px;
          float: right;
      }
      
