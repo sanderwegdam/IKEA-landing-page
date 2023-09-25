@@ -22,7 +22,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,13 +264,13 @@ button:hover {
     }
  
      .main-container {
-         width: 360px;
+         width: 350px;
          background-color: white;
       }
  
      .wrapper {
          display: grid;
-         grid-template-columns: 360px;
+         grid-template-columns: 350px;
          grid-template-areas: 
            "header-wrap"
            "search-wrap"
@@ -287,7 +287,7 @@ button:hover {
      .header {
         display: flex;
         justify-content: space-between;
-        width: 360px;
+        width: 350px;
     } 
     
     .header h2 { 
@@ -321,7 +321,7 @@ button:hover {
      }
  
      .logo img{
-        width: 360px;
+        width: 350px;
         padding: 15px 0;
         height: 220px;
         object-fit: cover;
@@ -329,7 +329,7 @@ button:hover {
      
      .vloerkleed-1 img {
          grid-area: vloerkleed-1;
-         width: 360px;
+         width: 350px;
          height: 250px;
          object-fit: cover;
          object-position: 0px -135px;
@@ -343,7 +343,7 @@ button:hover {
  
      .vloerkleed-2 img {
          grid-area: vloerkleed-2;
-         width: 360px;
+         width: 350px;
          height: 250px;
          object-fit: cover;
          object-position: 0px 0px;
@@ -361,11 +361,11 @@ button:hover {
      }    
 
      .productinfo {
-        width: 360px;
+        width: 350px;
     }
  
      button {
-         width: 360px;
+         width: 350px;
          margin-top: 5px;      
      }
  }
