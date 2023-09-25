@@ -23,8 +23,6 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -48,19 +46,8 @@ body {
     display: grid;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    width: 450px;
-}
-
 .header:hover{
     cursor: pointer;
-}
-
-.header h2 { 
-    font-size: 20px;
-    padding: 20px 0;
 }
 
 .search-wrap {
@@ -200,7 +187,6 @@ body {
 }
 
 .productinfo {
-    width: 450px;
     grid-area: productinfo;
     display: flex;
     flex-direction: row;
@@ -271,7 +257,121 @@ button:hover {
 }
 
 /* ----------------  MOBILE  ----------------*/
-@media only screen and (max-width: 1440px) {
+
+@media only screen and (max-width: 499px) {
+
+    body {
+     height: auto;
+    }
+ 
+     .main-container {
+         width: 375px;
+         background-color: white;
+      }
+ 
+     .wrapper {
+         display: grid;
+         grid-template-columns: 360px;
+         grid-template-areas: 
+           "header-wrap"
+           "search-wrap"
+           "logo"
+           "bronden"
+           "vloerkleed-1"
+           "vloerkleed-2"
+           "tekst"
+           "kies"
+           "productinfo"
+           "hoe";
+     }
+
+     .header {
+        display: flex;
+        justify-content: space-between;
+        width: 360px;
+    } 
+    
+    .header h2 { 
+        font-size: 18px;
+        padding: 20px 0;
+    }
+ 
+     .header-wrap {
+         grid-area: header-wrap;
+     }
+     
+     .search-wrap {
+         grid-area: search-wrap; 
+     }
+     
+     .search img{
+         padding-left: 0;
+         width: 40px;
+         float: right;
+     }
+     
+     .search h2{
+         width: 320px; 
+         padding-left: 5px;
+         font-weight: 400;
+         font-size: 16px;
+     }
+     
+     .logo {
+         grid-area: logo;
+     }
+ 
+     .logo img{
+        width: 360px;
+        padding: 15px 0;
+        height: 220px;
+        object-fit: cover;
+     }   
+     
+     .vloerkleed-1 img {
+         grid-area: vloerkleed-1;
+         width: 360px;
+         height: 250px;
+         object-fit: cover;
+         object-position: 0px -135px;
+     }
+     
+     .vloerkleed-2 {
+         height: 250px;
+         overflow: hidden;
+         margin-top: 5px;
+     }
+ 
+     .vloerkleed-2 img {
+         grid-area: vloerkleed-2;
+         width: 360px;
+         height: 250px;
+         object-fit: cover;
+         object-position: 0px 0px;
+         zoom: 111%;           
+     }
+     
+     .tekst {
+         grid-area: tekst;
+     }
+         
+     .tekst p {
+         font-size: 20px;
+         margin-top: 35px;
+         margin-bottom: 20px;
+     }    
+
+     .productinfo {
+        width: 360px;
+    }
+ 
+     button {
+         width: 360px;
+         margin-top: 5px;      
+     }
+ }
+
+@media only screen and (min-width: 500px){
 
    body {
     height: auto;
@@ -296,6 +396,17 @@ button:hover {
           "kies"
           "productinfo"
           "hoe";
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+    }  
+    
+    .header h2 { 
+        font-size: 20px;
+        padding: 20px 0;
     }
 
     .header-wrap {
@@ -352,6 +463,10 @@ button:hover {
         object-position: 0px 0px;
         zoom: 111%;           
     }
+
+    .productinfo {
+        width: 450px;
+    }
     
     .tekst {
         grid-area: tekst;
@@ -367,12 +482,11 @@ button:hover {
         width: 450px;
         margin-top: 5px;      
     }
-
 }
 
 
 /* ----------------  DESKTOP  ----------------*/
-@media only screen and (min-width: 1440px){
+@media only screen and (min-width: 1441px){
 
     body {
         display: flex;
@@ -423,12 +537,12 @@ button:hover {
     }
 
     .search img{
-        width: 40px;
+        width: 35px;
         float: right;
     }
     
     .search h2{
-        padding: 10px 0px;
+        padding: 12px 0px;
         padding-left: 5px;
         font-weight: 400;
         font-size: 16px;
@@ -437,12 +551,11 @@ button:hover {
 
     .logo {
         grid-area: logo;
-        width: 360px;
     }
 
     .logo img{
-       width: 360px;
-       object-fit: contain;
+       width: 100%;
+       height: 100%;
     }
 
     .bronden {
@@ -470,7 +583,8 @@ button:hover {
     .vloerkleed-1 {
         grid-area: vloerkleed-1;
         width: 720px;
-        height: 530px;       
+        height: 530px;  
+        margin-top: -20px;     
     }
 
     .vloerkleed-1 img {
@@ -483,6 +597,7 @@ button:hover {
     .vloerkleed-2  {
         grid-area: vloerkleed-2;
         width: 720px;
+        height: 530px;
         overflow: hidden;
     }
 
@@ -495,20 +610,22 @@ button:hover {
         zoom: 111%;          
     }
 
-    .tekst {
+    .tekst p {
+        margin-top: -10px;
         grid-area: tekst;
         width: 720px;
         font-size: 16px;
     }
 
     .kies {
+        margin-top:-70px;
         grid-area: kies;
         display: flex;
         flex-direction: column;
         padding-left: 10px;
     }
 
-    .kies .border{
+    .kies .border, .hoe .border{        
         display: none;
     }
 
@@ -518,16 +635,20 @@ button:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 20px;
+        margin-top: 0px;
         margin-bottom: 10px;
+        border-block: 1px solid var(--Light-gray);
+        padding: 15px;
     }
 
    .hoe {
+        margin-top: -70px;
         grid-area: hoe;
     }
     
     button {
-        width: 300px;
-        margin-top: 5px;      
+        width: 280px;
+        margin-top: 5px;  
+        font-size: 16px;    
     }
 } 
