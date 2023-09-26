@@ -330,21 +330,24 @@ button:hover {
      .vloerkleed-1 img {
          grid-area: vloerkleed-1;
          width: 350px;
-         height: 250px;
+         height: 200px;
          object-fit: cover;
-         object-position: 0px -135px;
+         object-position: 0px -105px;
      }
      
-     .vloerkleed-2 {
-         height: 250px;
+     .vloerkleed-2, .vloerkleed-1 {
+         height: 290px;
          overflow: hidden;
-         margin-top: 5px;
+     }
+     
+     .vloerkleed-2{
+        margin-top: -80px;        
      }
  
      .vloerkleed-2 img {
          grid-area: vloerkleed-2;
          width: 350px;
-         height: 250px;
+         height: 200px;
          object-fit: cover;
          object-position: 0px 0px;
          zoom: 111%;           
@@ -356,7 +359,7 @@ button:hover {
          
      .tekst p {
          font-size: 20px;
-         margin-top: 35px;
+         margin-top: -45px;
          margin-bottom: 20px;
      }    
 
@@ -448,8 +451,7 @@ button:hover {
         object-position: 0px -135px;
     }
     
-    .vloerkleed-2 {
-        height: 250px;
+    .vloerkleed-1, .vloerkleed-2 { 
         overflow: hidden;
         margin-top: 5px;
     }
